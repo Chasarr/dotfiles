@@ -100,7 +100,7 @@ alias image="feh"
 alias qtbrowser="qutebrowser"
 alias startmatlab="/usr/local/bin/matlab -desktop"
 alias ls="exa --icons --colour=always"
-alias cat="bat -p --paging=never"
+alias cat="bat -pp"
 alias grep="rg -i"
 alias l="exa -lah --icons --colour=always"
 alias get_idf='. $HOME/esp-idf/export.sh'
