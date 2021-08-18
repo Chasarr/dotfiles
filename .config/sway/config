@@ -253,4 +253,4 @@ for_window [class="Signal$"] {
 # Opens files
 bindsym $mod+f exec nautilus
 
-include @sysconfdir@/sway/config.d/*
+include @sysconfdir@/sway/config.d/*	# Maybe I should add something here
