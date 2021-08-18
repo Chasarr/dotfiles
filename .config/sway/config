@@ -28,7 +28,7 @@ output DVI-D-1 bg ~/Pictures/wallpapers/ariane_v.jpg stretch
 	input "type:keyboard" {
 		xkb_layout "se"
 		xkb_numlock enabled
-		repeat_delay 300	# Quicker keyboard navigation
+		repeat_delay 300
     	repeat_rate 40
 	}
 
@@ -236,7 +236,7 @@ exec_always --no-startup-id autotiling
 #no_focus [title="TipWindow"]
 
 # Automatically sets Discord as floating and puts it in scratchpad
-for_window [title="Discord$"] {
+for_window [class="discord" title="Discord$"] {
 	floating enable
 	resize set width 1800px height 1000px
 	move to scratchpad
@@ -253,4 +253,4 @@ for_window [class="Signal$"] {
 # Opens files
 bindsym $mod+f exec nautilus
 
-include @sysconfdir@/sway/config.d/*	# Maybe I should add something here
+include @sysconfdir@/sway/config.d/*
