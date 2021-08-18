@@ -1,0 +1,25 @@
+default-timeout=7000
+background-color=#2e3440
+border-radius=26
+#background-color=#BA26A7
+format=<b>%a ⏵</b> %s\n%b
+border-color=#3b4252
+width=300
+height=110
+
+[urgency=normal]
+
+#font=Hack Nerd Font
+font=Hack Nerd Font 11
+[urgency=high]
+border-color=#d08770
+default-timeout=0
+
+[app-name=Spotify]
+default-timeout=3000
+#invisible=1
+
+#[app-name=blueman]
+#default-timeout=0
+#width=1000
+#height=1000

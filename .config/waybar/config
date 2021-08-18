@@ -1,0 +1,42 @@
+{
+	"layer": "top",
+	"modules-left": ["sway/workspaces", "sway/mode"],
+	"modules-center": [],
+	"modules-right": ["tray", "network", "pulseaudio", "temperature","cpu", "clock"],
+
+	"comment": {
+		"memory": true
+	},
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-icons": {
+			"default": ["", "奔", "墳"]
+		},
+		"on-click": "pavucontrol"
+	},
+	"network": {
+		"tooltip": false,
+		"format-wifi": " {essid} {ipaddr}",
+		"format-ethernet": " {ipaddr}"
+	},
+	"cpu": {
+		"tooltip": false,
+		"format": " {}%"
+	},
+	"memory": {
+		"tooltip": false,
+		"format": " {}%"
+	},
+
+	"clock": {
+		"format-alt": "{:%a %Y %b %d, %R}"
+	},
+
+	"tray": {
+    	"icon-size": 18,
+    	"spacing": 10
+	}
+
+}

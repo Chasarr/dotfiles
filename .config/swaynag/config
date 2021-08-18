@@ -1,0 +1,11 @@
+font=Hack Nerd Font 10
+edge=top
+
+[nord]
+background=2e3440
+border=4c566a
+border-bottom-size=0
+text=eceff4
+button-background=3b4252
+message-padding=5
+button-border-size=2

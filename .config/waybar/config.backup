@@ -1,0 +1,37 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 24,
+    "modules-left": ["sway/workspaces"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["tray", "pulseaudio", "temperature", "cpu", "memory", "clock"],
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "disable-click": true,
+    },
+    "tray": {
+        "spacing": 10,
+    },
+    "clock": {
+        "format-alt": "{:%a %Y %b %d %R}"
+    },
+    "cpu": {
+        "format": " {usage}%"
+    },
+    "memory": {
+        "format": " {}%"
+    },
+    "temperature": {
+        "critical-threshold": 75,
+        "format": " {temperatureC}°C"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "",
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+}
