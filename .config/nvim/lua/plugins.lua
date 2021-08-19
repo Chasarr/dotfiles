@@ -3,7 +3,7 @@ return require('packer').startup(function()
 	local use = require('packer').use
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
-	--require 'telescope'.setup()
+
 	-- Fuzzy finder
 	use{
 		'nvim-telescope/telescope.nvim',
@@ -57,9 +57,6 @@ return require('packer').startup(function()
 		library = vim.api.nvim_get_runtime_file("", true),
       },
       -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-		enable = false,
-		},
 		},
 		},
 	}
