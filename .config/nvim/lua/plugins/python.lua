@@ -1,5 +1,10 @@
-local lsp = require 'lspconfig'
-
 -- Python
 --sudo pacman -S pyright
-lsp.pyright.setup{}
+local M = {}
+
+function M.setup(on_attach)
+	local lsp = require 'lspconfig'
+	lsp.pyright.setup{ on_attach = on_attach }
+end
+
+return M

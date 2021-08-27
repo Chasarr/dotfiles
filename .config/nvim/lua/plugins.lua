@@ -19,11 +19,7 @@ return require('packer').startup(function()
 
 	----- Language Server Protocol (LSP) ----
 	use 'neovim/nvim-lspconfig'
-	require 'plugins.python'	--Python
-	require 'plugins.julia'		--Julia
-	require 'plugins.lua'		--Lua
-	require 'plugins.bash'		--Bash
-
+	require 'plugins.lsp'		--LSP configs
 	--cmp, autocompletion
 	use {
   		"hrsh7th/nvim-cmp",
@@ -31,7 +27,10 @@ return require('packer').startup(function()
     	"hrsh7th/cmp-buffer",
   		}
 	}
-
+	-- autopairs
+	use 'windwp/nvim-autopairs'
+	require 'plugins.autopairs'
+	require('nvim-autopairs').setup{}
 	-- LuaSnip integration with lsp
 	use 'hrsh7th/cmp-nvim-lsp'
 

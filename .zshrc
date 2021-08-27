@@ -90,6 +90,7 @@ source $ZSH/oh-my-zsh.sh
 ######## Aliases ########
 alias sudo="sudo "
 alias vim="nvim"
+alias tvim="XDG_CONFIG_HOME=~/tconf nvim"
 #alias doas="doas "
 alias matlab="matlab -nodesktop -nosplash"
 alias dolphin="dolphin . &"
