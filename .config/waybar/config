@@ -11,10 +11,12 @@
 		"tooltip": false,
 		"scroll-step": 5,
 		"format": "{icon} {volume}%",
+		"format-muted": " {volume}%",
 		"format-icons": {
 			"default": ["", "奔", "墳"]
 		},
-		"on-click": "pavucontrol"
+		"on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+		"on-click-right": "pavucontrol"
 	},
 	"network": {
 		"tooltip": false,

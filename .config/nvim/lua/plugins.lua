@@ -46,7 +46,7 @@ return require('packer').startup(function()
 	-- Lualine
 	use {
   		'hoob3rt/lualine.nvim',
-  		require = {'kyazdani42/nvim-web-devicons', opt = true}
+  		requires = {'kyazdani42/nvim-web-devicons', opt = true}
 	}
 	require 'plugins.lualine'
 
