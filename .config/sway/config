@@ -227,10 +227,17 @@ bar {
 # Dynamic tiling. Suck it Getz
 exec_always --no-startup-id autotiling
 
-# Applets
+#
+## Applets
+#
 #exec_always --no-startup-id blueman-applet
 #exec_always nwg-panel
 
+#
+## GTK slow startup fix
+#
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 #
 ## Program specific window settings
 #
