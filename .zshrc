@@ -110,6 +110,8 @@ alias pspsps="~/.local/bin/pspsps"
 alias kexec="sudo kexec -l /boot/vmlinuz-linux-zen --initrd=/boot/initramfs-linux-zen-fallback.img --reuse-cmdline && sudo kexec -e"
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias zathura="zathura --fork"
+alias code="cd code"
+alias cs="coursier"
 export LD_PRELOAD=/usr/lib/libstdc++.so
 export LD_LIBRARY_PATH=/usr/lib/xorg/modules/dri/;
 export XTERM=xterm-256color

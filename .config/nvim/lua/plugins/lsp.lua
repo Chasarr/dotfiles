@@ -41,6 +41,7 @@ require('plugins.julia').setup(on_attach)		--Julia
 require('plugins.lua').setup(on_attach)			--Lua
 require('plugins.rust').setup(on_attach)		--Rust
 require('plugins.latex').setup(on_attach)		--LaTeX
+require('plugins.scala').setup(on_attach)		--Scala
 
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
