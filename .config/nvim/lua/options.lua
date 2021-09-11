@@ -20,6 +20,8 @@ opt.ai = true				--auto indent
 vim.api.nvim_buf_set_keymap(0, 'n', '<up>', '<C-y>', {})	--better scrolling with arrow keys
 vim.api.nvim_buf_set_keymap(0, 'n', '<down>', '<C-e>', {})
 vim.api.nvim_set_keymap('n', 'ff', '<cmd>lua require"telescope.builtin".find_files()<cr>', { noremap = true })
+vim.api.nvim_buf_set_keymap(0, 'n', '<MiddleMouse>', '<Nop>', {})
+
 
 -- Telescope keybindings
 vim.api.nvim_set_keymap('n', 'ff', '<cmd>lua require"telescope.builtin".find_files()<cr>', { noremap = true })
