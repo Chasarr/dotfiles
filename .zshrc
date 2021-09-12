@@ -114,6 +114,7 @@ alias code="cd code"
 alias cs="coursier"
 alias update="~/scripts/update.sh"
 alias grad="~/p038-albin-charlie/A1-CalcParse/gradlew"
+alias icat="kitty +kitten icat"
 export LD_PRELOAD=/usr/lib/libstdc++.so
 export LD_LIBRARY_PATH=/usr/lib/xorg/modules/dri/;
 export XTERM=xterm-256color
