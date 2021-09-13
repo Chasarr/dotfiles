@@ -116,7 +116,7 @@ alias update="~/scripts/update.sh"
 alias grad="~/p038-albin-charlie/A1-CalcParse/gradlew"
 alias icat="kitty +kitten icat"
 alias kdiff="kitty +kitten diff"
-alias kgrep="kitty +kitten hyperlinked_grep syntax"
+alias kgrep="kitty +kitten hyperlinked_grep"
 export LD_PRELOAD=/usr/lib/libstdc++.so
 export LD_LIBRARY_PATH=/usr/lib/xorg/modules/dri/;
 export XTERM=xterm-256color
@@ -138,3 +138,4 @@ function kdesrc-run
 #################################################################
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+clear

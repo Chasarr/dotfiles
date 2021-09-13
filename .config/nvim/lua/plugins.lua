@@ -20,6 +20,7 @@ return require('packer').startup(function()
 	----- Language Server Protocol (LSP) ----
 	use 'neovim/nvim-lspconfig'
 	require 'plugins.lsp'			--LSP configs
+	use 'editorconfig/editorconfig-vim'
 	--use({'scalameta/nvim-metals'})	--Scala support
 
 	--cmp, autocompletion
