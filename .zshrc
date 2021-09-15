@@ -117,6 +117,7 @@ alias grad="~/p038-albin-charlie/A1-CalcParse/gradlew"
 alias icat="kitty +kitten icat"
 alias kdiff="kitty +kitten diff"
 alias kgrep="kitty +kitten hyperlinked_grep"
+alias tmate="tmate -f ~/.config/tmux/tmux.conf"
 export LD_PRELOAD=/usr/lib/libstdc++.so
 export LD_LIBRARY_PATH=/usr/lib/xorg/modules/dri/;
 export XTERM=xterm-256color
