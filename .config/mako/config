@@ -24,7 +24,16 @@ default-timeout=3000
 #width=1000
 #height=1000
 
-[app-name="notify-send"]
+[summary="Screenshot soon"]
+format=<b>%b</b>
+anchor=center
+text-alignment=center
+font=Hack Nerd Font 15
+width=300
+height=300
+padding=40,0,40,30
+
+[summary="Screenshot done"]
 format=<b>%b</b>
 anchor=center
 default-timeout=1500
