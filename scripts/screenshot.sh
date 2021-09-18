@@ -8,7 +8,7 @@
 
 # First function, requires time as input
 countdown () {
-	notify-send "Screenshot soon" "Screenshot in $1" -u low -t 1100 -i ~/.config/mako/monitor-screenshot.png
+	notify-send "Screenshot" "Screenshot in $1" -u low -t 1100 -i ~/.config/mako/monitor-screenshot.png
 }
 
 DELAY="$1"		# Takes first argument as delay in seconds
@@ -31,5 +31,5 @@ sleep 0.1
 grim -g "$DIMENSIONS" -| wl-copy
 # Notifies user
 sleep 0.1
-notify-send "Screenshot done" "Screenshot taken" -u low -i ~/.config/mako/monitor-screenshot.png
+notify-send "Screenshot" "Screenshot taken" -u low -i ~/.config/mako/monitor-screenshot.png
 exit 0
