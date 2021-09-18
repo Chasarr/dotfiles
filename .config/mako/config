@@ -1,7 +1,6 @@
 default-timeout=7000
 background-color=#2e3440
 border-radius=26
-#background-color=#BA26A7
 format=<b>%a ⏵</b> %s\n%b
 border-color=#3b4252
 width=300
@@ -11,6 +10,7 @@ height=110
 
 #font=Hack Nerd Font
 font=Hack Nerd Font 11
+
 [urgency=high]
 border-color=#d08770
 default-timeout=0
@@ -23,3 +23,13 @@ default-timeout=3000
 #default-timeout=0
 #width=1000
 #height=1000
+
+[app-name="notify-send"]
+format=<b>%b</b>
+anchor=center
+default-timeout=1500
+text-alignment=center
+font=Hack Nerd Font 15
+width=300
+height=300
+padding=40,0,40,30

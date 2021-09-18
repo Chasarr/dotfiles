@@ -21,7 +21,10 @@ output DVI-D-1 pos 0 0 res 1920x1200
 focus output HDMI-A-2			# Focuses on the big display at launch
 workspace 1 output DVI-D-1		# Makes default workspace numbering logical. Workspace 1 at left, workplace 2 at right
 workspace 2 output HDMI-A-2
-output HDMI-A-2 bg ~/Pictures/wallpapers/rocket.jpg stretch
+output HDMI-A-2 {
+	bg ~/Pictures/wallpapers/rocket.jpg stretch
+	#max_render_time 2 
+}
 output DVI-D-1 bg ~/Pictures/wallpapers/ariane_v.jpg stretch
 
 # Keyboard:
@@ -90,12 +93,18 @@ exec_always --no-startup-id flashfocus -t 100
 	
 	# Screenshots and copies to clipboard
 	bindsym print exec 'grim -g "$(slurp)" -| wl-copy'
+	# Screenshots and copies to clipboard with timer
+	bindsym Ctrl+print exec 'grim -g "$(slurp; sleep 3)" -| wl-copy && notify-send "Slurp" "Screenshot taken" --urgency=low'
 	# Screenshots and saves
 	bindsym Shift+print exec grim -g "$(slurp)"
 	bindsym Control+Alt+Shift+r exec wf-recorder -a
 	# Color picker
 	bindsym Shift+ctrl+print exec grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy
 
+# TODO - fixa max_render_time
+
+	# 
+	bindsym $mod+y border toggle
 	# Toggles pause and play, prioritises Spotify
 	bindsym $mod+p exec "playerctl --player=spotify,%any play-pause"
 
