@@ -94,7 +94,7 @@ exec_always --no-startup-id flashfocus -t 100
 	# Screenshots and copies to clipboard
 	bindsym print exec 'grim -g "$(slurp)" -| wl-copy'
 	# Screenshots and copies to clipboard with timer
-	bindsym Ctrl+print exec '~/scripts/screenshot.sh 3'
+	bindsym Ctrl+print exec '~/scripts/screenshot.sh 2'
 	# Screenshots and saves
 	bindsym Shift+print exec grim -g "$(slurp)"
 	bindsym Control+Alt+Shift+r exec wf-recorder -a
