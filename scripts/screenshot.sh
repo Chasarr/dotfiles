@@ -26,6 +26,7 @@ do
 	sleep 1
 	makoctl dismiss -a
 done
+sleep 0.1
 # Executes screenshot
 grim -g "$DIMENSIONS" -| wl-copy
 # Notifies user
