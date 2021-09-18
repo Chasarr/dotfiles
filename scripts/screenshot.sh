@@ -29,5 +29,6 @@ done
 # Executes screenshot
 grim -g "$DIMENSIONS" -| wl-copy
 # Notifies user
+sleep 0.1
 notify-send "Screenshot done" "Screenshot taken" -u low -i ~/.config/mako/monitor-screenshot.png
 exit 0

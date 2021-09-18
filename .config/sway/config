@@ -94,7 +94,7 @@ exec_always --no-startup-id flashfocus -t 100
 	# Screenshots and copies to clipboard
 	bindsym print exec 'grim -g "$(slurp)" -| wl-copy'
 	# Screenshots and copies to clipboard with timer
-	bindsym Ctrl+print exec 'grim -g "$(slurp; sleep 2)" -| wl-copy && notify-send "Screenshot soon" "Screenshot in 2" -u low -i ~/.config/mako/monitor-screenshot.png && notify-send "Screenshot soon" "Screenshot in 1" -u low -i ~/.config/mako/monitor-screenshot.png && notify-send "Screenshot done" "Screenshot taken" -u low -i ~/.config/mako/monitor-screenshot.png'
+	bindsym Ctrl+print exec '~/scripts/screenshot.sh 3'
 	# Screenshots and saves
 	bindsym Shift+print exec grim -g "$(slurp)"
 	bindsym Control+Alt+Shift+r exec wf-recorder -a
