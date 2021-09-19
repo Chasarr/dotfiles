@@ -24,7 +24,7 @@ default-timeout=3000
 #width=1000
 #height=1000
 
-[summary="Screenshot"]
+[summary~="^Screenshot"]
 format=<b>%b</b>
 anchor=center
 default-timeout=1500
@@ -33,3 +33,9 @@ font=Hack Nerd Font 15
 width=300
 height=300
 padding=40,0,40,30
+
+[summary="Screenshot left"]
+output=DVI-D-1
+
+[summary="Screenshot right"]
+output=HDMI-A-2
