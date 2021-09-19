@@ -122,6 +122,7 @@ export LD_PRELOAD=/usr/lib/libstdc++.so
 export LD_LIBRARY_PATH=/usr/lib/xorg/modules/dri/;
 export XTERM=xterm-256color
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+export JDTLS_HOME=/usr/share/java/jdtls # Directory with the plugin and configs directories
 #export MANPAGER="nvim -c 'set ft=man' -"
 export bat="bat"
 export cd="cd -P"	# Makes cd follow symlink folders
