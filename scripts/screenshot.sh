@@ -49,6 +49,7 @@ then
 fi
 echo "$LEFT"
 echo "$RIGHT"
+makoctl dismiss -a
 # Countdown
 for (( i=DELAY; i>0; i--))
 do
