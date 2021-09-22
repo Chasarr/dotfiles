@@ -4,11 +4,11 @@ local M  = {}
 
 function M.setup(on_attach)
 	local lsp = require 'lspconfig'
-	--lsp.jdtls.setup{ on_attach = on_attach }
-	lsp.java_language_server.setup{
-		on_attach = on_attach,
-		cmd = {"/usr/share/java/java-language-server/lang_server_linux.sh"}
-	}
+	lsp.jdtls.setup{ on_attach = on_attach }
+	--lsp.java_language_server.setup{
+	--	on_attach = on_attach,
+	--	cmd = {"/usr/share/java/java-language-server/lang_server_linux.sh"}
+	--}
 end
 
 return M
