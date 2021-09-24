@@ -100,6 +100,8 @@ exec_always --no-startup-id flashfocus -t 100
 	bindsym Control+Alt+Shift+r exec wf-recorder -a
 	# Color picker
 	bindsym Shift+ctrl+print exec grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy
+	# Edit image in clipboard
+	bindsym $mod+print exec 'grim -g "$(slurp)" -| swappy -f -'
 
 # TODO - fixa max_render_time
 

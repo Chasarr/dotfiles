@@ -24,6 +24,18 @@ vim.api.nvim_buf_set_keymap(0, 'n', '<MiddleMouse>', '<Nop>', {})
 
 
 -- Telescope keybindings
+--TODO: check https://github.com/creativenull/dotfiles/blob/4fc5971029604ff1c338cfe0c6c2c333d9ee3ec4/.config/nvim-nightly/lua/creativenull/plugins/config/telescope.lua#L17
+local telescope = require 'telescope'
+--Telescope.setup{defaults = {vimgrep_arguments = { 'rg', '--hidden'}};
+
+local find_files = function()
+  telescope.builtin.find_files {
+    find_command = { 'rg', '--files', '--iglob', '!.git', '--hidden' },
+    previewer = false
+  }
+end
+
+
 vim.api.nvim_set_keymap('n', 'ff', '<cmd>lua require"telescope.builtin".find_files()<cr>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'fg', '<cmd>lua require"telescope.builtin".live_grep()<cr>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'fb', '<cmd>lua require"telescope.builtin".buffers()<cr>', { noremap = true })
