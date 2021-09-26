@@ -32,7 +32,7 @@ local on_attach = function(client, bufnr)
   buf_set_keymap('n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 
 end
---vim.api.nvim_echo({{'Hello everybodi'}}, true, {})
+
 require('plugins.python').setup(on_attach)		--Python
 require('plugins.bash').setup(on_attach)		--Bash
 require('plugins.c').setup(on_attach)			--C
@@ -42,7 +42,7 @@ require('plugins.lua').setup(on_attach)			--Lua
 require('plugins.rust').setup(on_attach)		--Rust
 require('plugins.latex').setup(on_attach)		--LaTeX
 require('plugins.scala').setup(on_attach)		--Scala
-
+require('plugins.html').setup(on_attach)		--HTML
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 --local servers = { 'pyright', 'rust_analyzer', 'tsserver' }
