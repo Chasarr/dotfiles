@@ -101,7 +101,7 @@ exec_always --no-startup-id flashfocus -t 100
 	# Color picker
 	bindsym Shift+ctrl+print exec grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy
 	# Edit image in clipboard
-	bindsym $mod+print exec 'grim -g "$(slurp)" -| swappy -f -'
+	bindsym $mod+print exec 'wl-paste | swappy -f -'
 
 # TODO - fixa max_render_time
 
@@ -247,8 +247,8 @@ exec_always --no-startup-id autotiling
 #
 ## GTK slow startup fix
 #
-exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
-exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+#exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+#exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 #
 ## Program specific window settings
 #
