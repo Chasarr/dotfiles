@@ -1,5 +1,0 @@
-
-2021/09/18 (18:05:34) | ===> btop++ v.1.0.0
-2021/09/18 (18:05:34) | ERROR: Terminal size to small for current config.
-(WxH) Current: 71x56 | Needed: 80x24
-Resize terminal or disable some boxes in config file to fix this.

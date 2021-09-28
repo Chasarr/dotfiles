@@ -57,7 +57,7 @@ gaps inner 5
 gaps outer 5
 
 # Flashfocus, flashes focused tiles
-exec_always --no-startup-id flashfocus -t 100
+exec_always --no-startup-id flashfocus
 # fcitx chinese input
 #exec_always fcitx5 -d --replace
 
