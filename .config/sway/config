@@ -246,12 +246,15 @@ exec_always --no-startup-id autotiling
 #
 ## GTK slow startup fix
 #
-#exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
-#exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 #
 ## Program specific window settings
 #
 #no_focus [title="TipWindow"]
+
+# Get window info in Sway
+bindsym $mod+g exec '~/scripts/getName.sh'
 
 # Automatically sets Discord as floating and puts it in scratchpad
 for_window [class="discord" title="Discord$"] {
