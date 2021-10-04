@@ -42,4 +42,4 @@ output=HDMI-A-2
 
 [summary="Window info"]
 format=<b>%s</b>\n%b
-#format=<b>%b</b>
+width=600
