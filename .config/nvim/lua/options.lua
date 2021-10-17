@@ -22,6 +22,9 @@ vim.api.nvim_buf_set_keymap(0, 'n', '<down>', '<C-e>', {})
 vim.api.nvim_set_keymap('n', 'ff', '<cmd>lua require"telescope.builtin".find_files()<cr>', { noremap = true })
 vim.api.nvim_buf_set_keymap(0, 'n', '<MiddleMouse>', '<Nop>', {})
 
+vim.api.nvim_buf_set_keymap(0, 'n', '<A-j>', ':m .+1<CR>==', { noremap = true})
+vim.api.nvim_buf_set_keymap(0, 'n', '<A-k>', ':m .-2<CR>==', { noremap = true})
+
 
 -- Telescope keybindings
 --TODO: check https://github.com/creativenull/dotfiles/blob/4fc5971029604ff1c338cfe0c6c2c333d9ee3ec4/.config/nvim-nightly/lua/creativenull/plugins/config/telescope.lua#L17

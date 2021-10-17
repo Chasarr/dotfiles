@@ -43,3 +43,4 @@ output=HDMI-A-2
 [summary="Window info"]
 format=<b>%s</b>\n%b
 width=600
+default-timeout=0
