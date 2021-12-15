@@ -4,7 +4,7 @@ FOCUSED_NODE=$(swaymsg -t get_tree | jq -r '..|try select(.focused == true)')
 SHELL=$(echo "$FOCUSED_NODE" | jq -r '.shell')
 if [ "$SHELL" == "xwayland" ]; then
 	CLASS=$(echo "$FOCUSED_NODE" | jq -r '.window_properties.class')
-	STR="Used XWayland\n\n"
+	STR="Uses XWayland\n\n"
 	STR+="class:\t"
 	STR+="$CLASS"
 else

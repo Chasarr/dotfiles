@@ -11,15 +11,14 @@ return require('packer').startup(function()
 	}
 
 	---- Treesitter, for better highlighting and language support ----
-	use {
-		'nvim-treesitter/nvim-treesitter',
-		run = ':TSUpdate'
-	}
-	require 'plugins.treesitter'
+	--use {
+	--	'nvim-treesitter/nvim-treesitter',
+	--	run = ':TSUpdate'
+	--}
+	--require 'plugins.treesitter'
 
 	----- Language Server Protocol (LSP) ----
 	use 'neovim/nvim-lspconfig'
-	require 'plugins.lsp'			--LSP configs
 	use 'editorconfig/editorconfig-vim'
 	--use({'scalameta/nvim-metals'})	--Scala support
 
@@ -31,9 +30,10 @@ return require('packer').startup(function()
   		}
 	}
 	-- autopairs
-	use 'windwp/nvim-autopairs'
-	require 'plugins.autopairs'
-	require('nvim-autopairs').setup{}
+	--require("cmp").setup{}
+	--use 'windwp/nvim-autopairs'
+	--require 'plugins.autopairs'
+	--require('nvim-autopairs').setup{}
 	-- LuaSnip integration with lsp
 	use 'hrsh7th/cmp-nvim-lsp'
 
@@ -56,4 +56,6 @@ return require('packer').startup(function()
 	-- Sonokai color scheme settings
 	use 'sainnhe/sonokai'
 	require 'plugins.sonokai'
+
+	--use 'Chasarr/extendj-lsp-nvim'
   end)

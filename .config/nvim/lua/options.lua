@@ -14,7 +14,8 @@ opt.shiftwidth = 4			--typing >> makes a 4 space wide tab
 opt.scrolloff = 0
 opt.termguicolors = true	--true color support
 opt.ai = true				--auto indent
-
+--cmd('syntax off')
+vim.lsp.set_log_level('debug')
 
 ---- Keybindings ----
 vim.api.nvim_buf_set_keymap(0, 'n', '<up>', '<C-y>', {})	--better scrolling with arrow keys
@@ -37,9 +38,10 @@ local find_files = function()
     previewer = false
   }
 end
-
-
 vim.api.nvim_set_keymap('n', 'ff', '<cmd>lua require"telescope.builtin".find_files()<cr>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'fg', '<cmd>lua require"telescope.builtin".live_grep()<cr>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'fb', '<cmd>lua require"telescope.builtin".buffers()<cr>', { noremap = true })
 vim.api.nvim_set_keymap('n', 'fh', '<cmd>lua require"telescope.builtin".help_tags()<cr>', { noremap = true })
+
+
+require 'plugins.lsp'			--LSP configs

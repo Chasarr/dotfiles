@@ -36,7 +36,9 @@ end
 require('plugins.python').setup(on_attach)		--Python
 require('plugins.bash').setup(on_attach)		--Bash
 require('plugins.c').setup(on_attach)			--C
-require('plugins.java').setup(on_attach)		--Java
+--require('plugins.java').setup(on_attach)		--Java
+require('plugins.extendj').setup(on_attach)
+--vim.api.nvim_command [[autocmd BufReadPost * :lua require('extendj-lsp').check_start_java_lsp()]]
 require('plugins.julia').setup(on_attach)		--Julia
 require('plugins.lua').setup(on_attach)			--Lua
 require('plugins.rust').setup(on_attach)		--Rust

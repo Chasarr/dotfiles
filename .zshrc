@@ -110,7 +110,7 @@ alias pspsps="~/.local/bin/pspsps"
 alias kexec="sudo kexec -l /boot/vmlinuz-linux-zen --initrd=/boot/initramfs-linux-zen-fallback.img --reuse-cmdline && sudo kexec -e"
 alias config="/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME"
 alias zathura="zathura --fork"
-alias code="cd code"
+#alias code="cd code"
 alias cs="coursier"
 alias update="~/scripts/update.sh"
 alias grad="~/p038-albin-charlie/A1-CalcParse/gradlew"
@@ -131,10 +131,14 @@ export JDTLS_HOME=/usr/share/java/jdtls # Directory with the plugin and configs 
 export bat="bat"
 export cd="cd -P"	# Makes cd follow symlink folders
 alias checkx="xlsclients"
+alias extendj-lsp="java -jar $HOME/lsp-charlie-jonathan/server_java/lsp.jar"
 # kdesrc-build ##################################################
 
 ## Add kdesrc-build to PATH
 export PATH="$HOME/kde/src/kdesrc-build:$PATH"
+
+## npm global fix
+export PATH=~/.npm-global/bin:$PATH
 
 ## Run projects built with kdesrc-build
 function kdesrc-run

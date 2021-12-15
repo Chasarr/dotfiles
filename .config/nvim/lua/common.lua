@@ -21,6 +21,5 @@ function M.set_keymap(mode, key, action)
     vim.api.nvim_set_keymap(mode, key, action, opts)
 end
 
-
 return M
 
