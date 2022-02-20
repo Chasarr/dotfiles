@@ -17,7 +17,7 @@ return require('packer').startup(function()
 	--}
 	--require 'plugins.treesitter'
 
-	----- Language Server Protocol (LSP) ----
+	----- Language Server Protocol (SP) ----
 	use 'neovim/nvim-lspconfig'
 	use 'editorconfig/editorconfig-vim'
 	--use({'scalameta/nvim-metals'})	--Scala support

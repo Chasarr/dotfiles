@@ -28,8 +28,9 @@
 		"format": " {}%"
 	},
 	"memory": {
-		"tooltip": false,
-		"format": " {}%"
+		"tooltip": true,
+		"format": " {}%",
+		"max-length": 0
 	},
 
 	"clock": {

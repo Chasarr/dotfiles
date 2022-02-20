@@ -37,7 +37,7 @@ require('plugins.python').setup(on_attach)		--Python
 require('plugins.bash').setup(on_attach)		--Bash
 require('plugins.c').setup(on_attach)			--C
 --require('plugins.java').setup(on_attach)		--Java
-require('plugins.extendj').setup(on_attach)
+--require('plugins.extendj').setup(on_attach)
 --vim.api.nvim_command [[autocmd BufReadPost * :lua require('extendj-lsp').check_start_java_lsp()]]
 require('plugins.julia').setup(on_attach)		--Julia
 require('plugins.lua').setup(on_attach)			--Lua
@@ -45,6 +45,7 @@ require('plugins.rust').setup(on_attach)		--Rust
 require('plugins.latex').setup(on_attach)		--LaTeX
 require('plugins.scala').setup(on_attach)		--Scala
 require('plugins.html').setup(on_attach)		--HTML
+require('plugins.sql').setup(on_attach)			--sql
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 --local servers = { 'pyright', 'rust_analyzer', 'tsserver' }

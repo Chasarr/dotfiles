@@ -9,9 +9,9 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term kitty
+set $term foot
 # Your preferred application launcher
-set $menu wofi --show=drun --allow-images --term=/usr/bin/kitty --prompt="" --insensitive
+set $menu wofi --show=drun --allow-images --term=/usr/bin/foot --prompt="" --insensitive
 
 # Notification service
 exec mako
@@ -38,7 +38,7 @@ output DVI-D-1 bg ~/Pictures/wallpapers/ariane_v.jpg stretch
 # Mouse:
 input "type:pointer" {
   accel_profile flat
-  pointer_accel 0
+  pointer_accel 0.7
   scroll_factor 2
 }
 

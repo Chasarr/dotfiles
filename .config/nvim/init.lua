@@ -5,9 +5,3 @@ require('plugins')
 
 -- Options
 require('options')
-
-
-
-
-vim.api.nvim_command([[autocmd BufReadPost * echo 'bruh']])
-

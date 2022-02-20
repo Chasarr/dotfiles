@@ -9,7 +9,7 @@ height=110
 [urgency=normal]
 
 #font=Hack Nerd Font
-font=Hack Nerd Font 11
+font=Hack Nerd Font 13
 
 [urgency=high]
 border-color=#d08770
