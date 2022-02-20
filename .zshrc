@@ -5,6 +5,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Turn off displays for xorg, only works for xorg (good)
+if [[ -n $SSH_CONNECTION ]] ; then
+	xrandr -display :0.0 --output HDMI-A-1 --off && xrandr -display :0.0 --output DVI-D-0 --off
+fi
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -132,6 +137,8 @@ export bat="bat"
 export cd="cd -P"	# Makes cd follow symlink folders
 alias checkx="xlsclients"
 alias extendj-lsp="java -jar $HOME/lsp-charlie-jonathan/server_java/lsp.jar"
+alias dispoff="xrandr -display :0.0 --output HDMI-A-1 --off && xrandr -display :0.0 --output DVI-D-0 --off"
+alias dispon="xrandr -display :0.0 --output HDMI-A-1 --auto && xrandr -display :0.0 --output DVI-D-0 --auto"
 # kdesrc-build ##################################################
 
 ## Add kdesrc-build to PATH
