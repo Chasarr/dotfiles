@@ -5,11 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Turn off displays for xorg, only works for xorg (good)
-if [ -n $SSH_CONNECTION ] && [ "$(loginctl show-session $(loginctl show-user $(whoami) -p Display --value) -p Type --value)" = "x11" ]; then
-	xrandr -display :0.0 --output HDMI-A-1 --off && xrandr -display :0.0 --output DVI-D-0 --off
-fi
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
