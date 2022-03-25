@@ -296,6 +296,6 @@ for_window [class="drast.views.gui.DrASTGUI" title="Open compiler..."] floating 
 for_window [class="drast.views.gui.DrASTGUI" title="Parameters"] floating enable
 
 # Opens files
-bindsym $mod+f exec nautilus
+bindsym $mod+f exec nautilus ~/Downloads
 
 include @sysconfdir@/sway/config.d/*
